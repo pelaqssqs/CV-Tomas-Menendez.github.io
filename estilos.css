@@ -3,27 +3,35 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #000000;
+    background-image: url(imgfondo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
-    background-color: #000000;
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    padding-bottom: 0;   
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
 }
 
 .boton {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    border: solid 2px #ffffff;
+    border: solid 2px transparent;
     padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;
     text-decoration: none;
 }
 
 .boton:hover{
-    box-shadow: rgb(99, 0, 0);
+    background-color: #ffffff;
+    color: #000000;
+    transition-duration: 250ms;
+    border: solid 2px #000000;
 }
 
 main {
@@ -34,14 +42,22 @@ main {
 }
 
 .cuadro {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 20px;
     border: 1px solid #000000;
     border-radius: 40px;
     text-align: center;
-    height: 20rem;
-    width: 20rem;
+    height: 400px;
+    width: 400px;
     text-decoration: none;
+    color: #ffffff;
+    
+}
+.cuadro:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition-duration: 350ms;
+    
 }
 .img{
     border-radius: 50%;
@@ -58,10 +74,106 @@ main {
     text-align: left;
     font-size: 15px;
 }
-.href{
-    color: black
-}
-
 .href:hover {
     color: blue;
+}
+.imgf{
+    height: 50px;
+    width: 50px;
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: space-evenly;
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #000000;
+        background-image: url(imgfondo.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    header {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        padding-bottom: 0;   
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 15px;
+    }
+    
+    .boton {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: solid 2px transparent;
+        padding: 5px 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: x-small;
+    }
+    
+    .boton:hover{
+        background-color: #ffffff;
+        color: #000000;
+        transition-duration: 250ms;
+        border: solid 2px #000000;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+    }
+    
+    .cuadro {
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        border: 1px solid #000000;
+        border-radius: 40px;
+        text-align: center;
+        height: 350px;
+        width: 300px;
+        text-decoration: none;
+        color: #ffffff;
+        
+    }
+    .cuadro:hover {
+        color: black;
+        background-color: rgba(255, 255, 255, 0.7);
+        transition-duration: 350ms;
+        
+    }
+    .img{
+        border-radius: 50%;
+        height: 140px;
+        width: 140px;
+        border: solid 2px black;
+        text-align: center;
+    }
+    #text_pagprin{
+        text-align: center;
+        font-size: 15px;
+    }
+    #text_contacto{
+        text-align: left;
+        font-size: 15px;
+    }
+    .href:hover {
+        color: blue;
+    }
+    .imgf{
+        height: 50px;
+        width: 50px;
+    }
+    .footer{
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: space-evenly;
+        text-align: center;
+    }
 }
